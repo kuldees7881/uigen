@@ -4,7 +4,8 @@
       "Bash(claude --version)",
       "Bash(Get-ChildItem -Path \"C:\\\\Users\\\\kulsingh2\\\\Claude Project\\\\uigen\" -Force)",
       "Bash(Select-Object Name, PSIsContainer)",
-      "Bash(Format-Table -AutoSize)"
+      "Bash(Format-Table -AutoSize)",
+      "mcp__playwright"
     ]
   }
 }
