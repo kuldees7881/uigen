@@ -1,0 +1,20 @@
+name: Claude Code
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issues:
+    types: [opened, edited]
+
+jobs:
+  claude:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: anthropics/claude-code-action@main
+        with:
+          api_key: ${{ secrets.ANTHROPIC_API_KEY }}
